@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hi</title>
+	<style>
+		.container {
+			display: -webkit-box;
+  			display: -moz-box;
+  			display: -ms-flexbox;
+  			display: -webkit-flex;
+  			display: flex;
+			flex-direction: row;
+			background-color: #00a;
+			height: 200px;
+			justify-content: flex-start;
+			align-items: center;
+			/*align-content: center;*/
+		}
+		.item {
+			height: 50px;
+			background-color: #d90;
+			flex-grow: 0;
+			flex-basis: auto;
+			width: 200px;
+			
+		}
+
+		.left-minus {
+			order: -1;
+		}
+		.item-1 {
+			order: 1;
+		}
+		.item-2 {
+			order: 1;
+		}
+		.item-3 {
+			order: 1;
+			flex-shrink: 2; /* ?? */
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item left-minus">aaa</div>
+		<div class="item item-1">bbb</div>
+		<div class="item item-2">ccc</div>
+		<div class="item item-3">dddd</div>
+	</div>
+</body>
+</html>
